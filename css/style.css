@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+  /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* ------------------------------------------------------------------------------------------ */
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/* --------Menu Bar---------- */
+
+.menuBar{
+    width: 100%;
+    height:50px;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuBar .menuLeft{
+    width:20%;
+    height:100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Pacifico", cursive;
+    padding-left: 1%;
+    color:#3D1043;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menuBar .menuLeft .logo{
+    width:40px;
+    height:40px;
+    margin-right:5%;
+}
+
+.menuBar .menuRight{
+    width: 40%;
+    height:50%;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menuBar .menuRight .menuBtns{
+    color: #22252C;
+    text-decoration: none;
+}
+
+.menuBar .menuRight .menuBtns:hover{
+    color: #4EB4A5;
+}
+
+.menuBar .menuRight .menuBtns:active{
+    color: #22252C;
+}
+
+/* --------HOME PAGE---------- */
+
+.intro{
+    width: 70%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0% 2% 0%;
+    border: 6px solid #4EB4A5;
+    border-radius: 10px;
+}
+
+.intro img{
+    height: 400px;
+    margin-top: -50px;
+    border-radius: 10px;
+}
+
+.intro .introText{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-flow: column;
+    height: 210px;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+.intro .introText h1{
+    font-family: "Pacifico", cursive;
+    color: #4EB4A5;
+    font-size: 70px;
+    height:100px;
+    font-weight: 400;
+    margin-top: -10px;  
+    margin-left: -10px;  
+}
+
+.intro .introText h2{
+    font-size: 30px;
+}
+
+.intro .introText h3{
+    font-weight: 300;
+}
+
+.intro .introText p{
+    font-size: 15px;
+}
+
+.latestWork{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #22252C;
+    font-family: "Montserrat", sans-serif;
+    margin: 2% 0% 2% 0%;
+    
+}
+
+.latestWork h3{
+    font-weight: 300;
+    margin: 2% 0% 2% 0%;
+}
+
+.latestWork .recentProjects{
+    width:80%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+.latestWork .project{
+    width: 25%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px -6px #22252ca4;
+}
+
+.latestWork .project img{
+    width:100%;
+    height:100%;
+}
+
+/* --------Footer---------- */
+
+.footer{
+    width:100%;
+    background-color: #EFEBE6;
+    box-shadow: inset 0 8px 10px -6px #22252c72;
+    display: flex;
+    justify-content: space-between;  
+    font-family: "Montserrat", sans-serif;
+    padding: 0.5% 0 0.5% 0;
+}
+
+.footer .footerLeft{
+    width: 30%;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    margin-left: 2%;
+    color: #22252C;
+}
+
+.footer .footerLeft p{
+  margin-left: 5px;
+}
+
+.footer .footerRight{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.footer .footerRight a{
+    color: #22252C;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.footer .footerRight a:hover{
+    color: #4EB4A5;
+}
+
+/* --------PAGE HEADING---------- */
+
+.heading{
+    width: 100%;
+    height:100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.heading h1{
+    background-color: #f9f9f9;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #4EB4A5;
+    font-size: 70px;
+    position: absolute;
+    padding: 0% 1% 0% 1%;
+}
+
+.heading hr.line{
+    border: 5px solid #3D1043;
+    position: absolute;
+    width: 100%;
+    top:60px;
+}
+
+/* --------About PAGE---------- */
+
+.aboutMe{
+    width: 70%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutMe img{
+    width:300px;
+    border-radius: 10px;
+    margin-top: -2%;
+}
+
+.aboutMe .aboutMeText{
+    font-family: "Montserrat", sans-serif;
+    width:60%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.aboutMe .aboutMeText p{
+    font-size: 15px;
+}
+
+.sectionBreak{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.sectionBreak hr.lineBreak{
+    border:none;
+    height: 20px;
+    width: 100%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 10px -20px #22252c90;
+    margin: -30px auto 10px;     
+}
+
+.whatIDo{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 4%;
+}
+
+.whatIDo h1{
+    width: 100%;
+    text-align: center;
+    margin: 2% 0% 2% 0%;
+ }
+
+.whatIDo .jobTitle{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.whatIDo .jobTitle .uxDesign{
+    background-color: #4EB4A5;
+    width:35%;
+    border-radius: 0px 30px 30px 0px;
+    padding-left: 5%;
+    padding-right: 2%;
+    text-align: left;
+}
+
+.whatIDo .jobTitle .webDesign{
+    background-color: #4EB4A5;
+    width: 35%;
+    border-radius: 30px 0px 0px 30px;
+    padding-right: 5%;
+    padding-left: 2%;
+    text-align: right;
+}
+
+.jobTitle h3{
+    font-weight: 500;
+    margin-top:8%;
+}
+
+.jobTitle p{
+    font-size: 15px;
+    margin: 5% 0% 8% 0%;
+}
+
+
+.mySkills{
+    width: 65%;
+    height:450px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #22252c4f;
+    box-shadow: 0 20px 10px -20px #22252c90;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    margin: 2% 0% 2% 0%;
+}
+
+.mySkills h1{
+   width: 100%;
+   text-align: center;
+   margin: 2% 0% 2% 0%;
+}
+
+.mySkills .skills{
+    height: 100%;
+    position: relative; 
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin: 2% 2% 2% 2%;
+}
+
+.mySkills .skills .icons {
+    position: relative;
+    display: flex;
+    width:17%;
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySkills .skills img{
+    width:100%;
+    border: 1px solid #22252c4f;
+    box-shadow: 0 20px 10px -20px #22252c90;
+    border-radius: 10px;
+}
+
+
+.mySkills .skills .icons p{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+}
+
+.more{
+    width: 100%;
+    background-color: #3D1043;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 3% 0% 3% 0%;
+}
+
+.more .moreGroup{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.more .moreGroup img{
+    width: 30%;
+}
+
+.comp{
+    border-radius: 0px 10px 10px 0px;
+}
+
+.family{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.more .moreList{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    height:100%;
+    padding: 0% 5% 0% 5%;
+}
+
+.socialMedia{
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 3% 0% 3% 0%;
+}
+
+.socialMedia h3{
+    font-weight: 300;
+    padding-top: 1%;
+}
+
+.socialMedia .socialLinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 0% 1% 0%;
+}
+
+.socialMedia .socialLinks .fa-brands{
+    color: #22252C;
+    font-size: 50px;
+}
+
+.socialMedia .socialLinks .fa-brands:hover{
+    color:#4EB4A5;
+}
+
+/* --------Portfolio PAGE---------- */
+
+.porfolioHeading{
+    padding-bottom: 15px;
+}
+
+.portfolio{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 5%;
+}
+
+.project{
+    width: 25%;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #22252C;
+    text-align: center;
+    margin-top: 3%;
+    transition: 0.5s;
+}
+
+.project:hover{
+    background-color: #22252C;
+    color: #f9f9f9;
+    box-shadow: 0 20px 10px -20px #22252c90;
+    transition: 0.5s;
+}
+
+.project:active{
+    color: #22252C;
+    transition: 0.5s;
+}
+
+.project img{
+    width:100%;
+    border-radius: 10px;   
+}
+
+.project h3{
+    font-weight: 500;
+}
+
+.project p{
+    font-size: 15px;
+    margin-top: 2%;
+}
+
+.project #sList{
+    font-style: italic;
+    font-size: 13px;
+    margin-bottom: 1%;
+}
+
+/* --------Contact Page---------- */
+
+.contactMe{
+    width: 80%;
+    height: 68.2vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.socialContact{
+    width:30%;
+    background-color:#4EB4A5;
+    position: absolute;
+    height:220px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: #f9f9f9;
+    z-index: 1;
+    box-shadow: 0 20px 10px -20px #22252c90;
+    border-radius: 10px;
+    padding: 25px 0px 25px 0px;
+}
+
+.socialContact .smLinks{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.socialContact .smLinks:hover{
+   color: #3D1043;
+}
+
+.socialContact .smLinks:active{
+    font-style: italic;
+ }
+
+.socialContact .smLinks h3{
+    font-weight: 300;
+    width: 70%;
+}
+
+.socialContact .smLinks .fa-brands{
+    font-size: 30px;
+}
+
+.contactFrom{
+    width: 60%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height:320px;
+    right:0%;
+    padding: 0% 0% 0% 25%;
+    background-color: #fff;
+    box-shadow: 0 20px 10px -20px #22252c90;
+    border-radius: 10px;
+    border:1px solid #22252c10;
+}
+
+textarea{
+    width: 100%;
+    resize:none;
+    height:100px;
+    margin-top: 8px;
+    font-family: "Montserrat", sans-serif;
+}
+
+textarea:focus,
+input[type="text"]:focus, input[type="email"]:focus{
+    outline: 1px solid #3D1043;
+}
+
+input[type="text"],[type="email"], textarea, button{
+    padding: 5px;
+    border-radius: 10px;
+    border:1px solid #707070;
+}
+
+label[for="email"]{
+    margin-left: 20px;
+}
+
+button{
+    background-color: #3D1043;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    margin-left: 42%;
+    color: #f9f9f9;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: #707070;
+    cursor: pointer;
+}
